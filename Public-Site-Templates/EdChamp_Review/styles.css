@@ -1,0 +1,206 @@
+/* GLOBAL */
+
+body {
+  font-family: "Apercu","Helvetica Neue",Arial,sans-serif;
+}
+
+/* MAIN STRUCTURE ITEMS */
+.m-item1 { grid-area: pic; }
+.m-item2 { grid-area: readings; }
+.m-item3 { grid-area: content; }
+.m-item4 { grid-area: tip; }
+.m-item5 { grid-area: help;  }
+/* NAVBAR ITEMS */
+.n-item1 { grid-area: one; }
+.n-item2 { grid-area: two; }
+.n-item3 { grid-area: three; }
+.n-item4 { grid-area: four; }
+.n-item5 {grid-area: uline; }
+/* SUGGESTED READINGS */
+.r-item1 {grid-area: title;}
+.r-item2 {grid-area: p1;}
+.r-item3 {grid-area: r1;}
+.r-item4 {grid-area: p2;}
+.r-item5 {grid-area: r2;}
+.r-item6 {grid-area: p3;}
+.r-item7 {grid-area: r3;}
+/* TIP ITEMS */
+.t-item1 { grid-area: icon; }
+.t-item2 { grid-area: tip; }
+
+
+/* MAIN STRUCTURE GRID CONTAINER */
+.main-grid-container {
+  display: grid;
+  grid-template-areas:
+    'pic pic pic readings'
+    'pic pic pic readings'
+    'content content content readings'
+    'tip tip tip help';
+  grid-gap: 5px;
+  /*background-color: #2196F3;*/
+  padding: 5px;
+}
+/* MAIN STRUCTURE GRID ITEMS */
+.main-grid-container > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* NAVBAR GRID CONTAINER */
+.navbar-grid-container {
+  display: grid;
+  grid-template-areas:
+    'one two three four'
+    'uline uline uline uline';
+  /*grid-gap: 10px;*/
+  /*background-color: #2196F3;*/
+  padding: 5px;
+}
+/* NAVBAR GRID ITEMS */
+.navbar-grid-container > div {
+  /*background-color: rgb(211,	234,	252);*/
+  text-align: left;
+  padding: 20px 5px 0;
+  font-size: 14px;
+}
+
+.navbar-grid-container > div > a {
+  text-decoration: none;
+  color: rgba(100, 100, 100, 1)
+}
+/* first letter of nav item */
+
+.navbar-grid-container > div > a:hover {
+    border-bottom: 2px solid;
+    border-bottom-color: rgba(239, 134, 113, 1);
+}
+        /* styles for underline */
+underline {
+  background-color: rgba(200, 200, 200, 1);
+  /*padding: 2px 0 0;*/
+  margin-top: 4px;
+  height:2px;
+  width: 100%;
+  display: block;
+}
+
+/*target rules based on jsfiddle: https://jsfiddle.net/codepo8/wsD9L*/
+.activity {
+  /*position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;*/
+}
+
+.main-grid-container {
+  display: none;
+}
+.main-grid-container:target {
+  display: grid;
+}
+
+/* PIC */
+
+.m-item1 > img {
+  max-width: 600px;
+  height: auto;
+}
+
+/* SUGGESTED READINGS STRUCTURE GRID CONTAINER */
+.readings-grid-container {
+  display: grid;
+  grid-template-areas:
+    'title title'
+    'p1 r1'
+    'p2 r2'
+    'p3 r3';
+  grid-gap: 1px;
+  /*background-color: #2196F3;*/
+  padding: 1px;
+}
+
+/* SUGGESTED READINGS GRID ITEMS */
+.readings-grid-container > div {
+  /*background-color: rgb(211,	234,	252);*/
+  /*text-align: left;*/
+  /*padding: 20px 5px 0;*/
+}
+
+.r-item1 {
+  text-align: center;
+}
+/* CONTENT */
+
+.m-item3 {
+  max-width: 600px;
+}
+
+.readings-grid-container > img {
+  max-height: 120px;
+  width: auto;
+}
+
+/* TIP STRUCTURE GRID CONTAINER (there are two of these side by side) */
+.tip-grid-container {
+  display: grid;
+  grid-template-areas:
+    'icon tip tip tip';
+  grid-gap: 5px;
+  /*background-color: #2196F3;*/
+  padding: 5px;
+}
+
+/* TIP GRID ITEMS */
+.navbar-grid-container > div {
+  /*background-color: rgb(211,	234,	252);*/
+  text-align: left;
+}
+
+/* TIP */
+.t-item1 > img {
+  max-width: auto;
+  max-height: 100px;
+}
+
+.tip-grid-container {
+  max-width: 295px;
+  border: 1px solid rgba(200, 200, 200, 1);
+  border-radius: 5px;
+  float: left;
+}
+
+.tip-grid-container.left {
+  margin-right: 5px;
+}
+.tip-grid-container.right {
+  margin-left: 5px;
+}
+
+/* HELP */
+
+.m-item5 {
+  max-width: 300px;
+  background-color: rgba(230, 70, 38, 1);
+  color: white;
+}
+
+.m-item5 > p, .m-item5 > h2 {
+  padding-left: 20px;
+}
+
+.m-item5 img {
+  max-width: auto;
+  max-height: 50px;
+}
+/* TYPOGRAPHY */
+
+p {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 20px;
+}
