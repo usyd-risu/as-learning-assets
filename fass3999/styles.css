@@ -1,25 +1,22 @@
-/*target rules based on jsfiddle: https://jsfiddle.net/codepo8/wsD9L
-  make sure to but an ID on the end of the url for iframe .e.g #content1 otherwise the content will be blank */
+/* NAVBAR RULES */
 
-.target-container {
+
+/* DISPLAY RULES */
+
+.content-box {
   display: none;
 }
-/* this sets it so the nav bar is visible from anchor links. reference: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
-
-.target-container:target:before {
-content:"";
-display:block;
-height:100px; /* fixed header height*/
-margin:-100px 0 0; /* negative fixed header height */
+.content-box:target {
+  display: grid;
 }
 
-.target-container:target {
-  display: block;
+
+/* TYPOGRAPHY */
+
+p {
+  font-size: 14px;
 }
 
-.center {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
+h2 {
+  font-size: 20px;
 }
