@@ -143,16 +143,6 @@ underline {
   width: auto;
 }
 
-/* FEATURE */
-.feature-grid-container {
-max-width: 600px;
-border: 1px solid rgba(200, 200, 200, 1);
-border-radius: 5px;
-}
-.f-item1 > img {
-	max-width: auto;
-}
-
 /* TIP STRUCTURE GRID CONTAINER (there are two of these side by side) */
 .tip-grid-container {
   display: grid;
