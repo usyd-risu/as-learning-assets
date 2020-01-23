@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>DECO1016 Template</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="css/prism.css"/>
+	</head>
+
+	<body class="container">
+	 <header>
+		 <div class="logo-container"><a href="index.html">CCC</a></div>
+		 <div class="header-container">Creative Coding Challenge </div>
+	  </header>
+	 <nav>
+		 <div class="nav-container">
+			<a href="#title">How to use this template</a>
+		 	<ol>
+				<li><a href="#step1">Step 1 - Introduction</a></li>
+				<li><a href="#step2">Step 2 - Explanation</a></li>
+				<ol>
+					<li><a href="#step2-1">Subheadings</a></li>
+					<ol>
+						<li><a href="#step2-1-1">Sub-subheadings</a></li>
+					</ol>
+					<li><a href="#step2-2">Formatting Elements</a></li>
+					<ol>
+						<li><a href="#step2-2-1">Ordered Lists</a></li>
+						<li><a href="#step2-2-2">Unordered Lists</a></li>
+						<li><a href="#step2-2-3">Code Blocks</a></li>
+					</ol>
+					<li><a href="#step2-3">Additional Media</a></li>
+					<ol>
+						<li><a href="#step2-3-1">Images</a></li>
+						<li><a href="#step2-3-2">Videos</a></li>
+						<li><a href="#step2-3-3">Code Embeds</a></li>
+					</ol>
+				</ol>
+				<li><a href="#step3">Step 3 - Evaluation</a></li>
+				<ol>
+					<li><a href="#step3-1">Task Based</a></li>
+					<li><a href="#step3-2">Exploration Based</a></li>
+					<li><a href="#step3-3">Something Else</a></li>
+				</ol>
+			</ol>
+		</div>
+	</nav>
+
+    <main>
+			<article>
+	      <section class="title-container">
+	        <h1 id="title">How to use this template</h1>
+	      </section>
+
+
+
+				<section class="content-container">
+					<p>General description about the tutorial including links to any assumed knowledge.</p>
+
+					<h2 id="step1">Step 1 - Introduction </h2>
+
+					<p>Introduce your topic with some information and a basic example.</p>
+
+<pre><code class="language-processing">function setup() {
+  createCanvas(400, 400);
+}
+
+// Remember to include comments to describe your code.
+
+function draw() {
+  background(220);
+}</code></pre>
+
+					<p>Perhaps you want to include some pre-formatted code like above. Or maybe you want to embed a code editor like below.</p>
+
+					<iframe src="https://editor.p5js.org" scrolling="no" frameborder="0" height="575" allowtransparency="true" allowfullscreen="true" name="P5.js Embed" title="P5.js Embed 1" style="width: 100%; overflow: hidden;"></iframe>
+					<label for="P5.js Embed"><em>Click the play button to run the code example.</em></label>
+
+
+				</section>
+
+				<section class="content-container">
+					<h2 id="step2">Step 2 - Explanation</h2>
+
+					<p>Provide more information about your topic, with useful demonstrations.</p>
+
+					<h3 id="step2-1">Subheadings</h3>
+					<p>Use subheadings to chunk your information into smaller components.</p>
+					<h4 id="step2-1-1">Sub-subheadings</h4>
+					<p>Futher group and categorise your topics. Try not to go lower than this level of subheading, any further and the user might start to forget where they are in the heirarchy.</p>
+
+					<h3 id="step2-2">Formatting Elements</h3>
+					<p>Don't forget to use HTML elements to format your content. Elements such as: </p>
+
+					<h4 id="step2-2-1">Ordered Lists</h4>
+					<p> Use an ordered list when there are a linear set of steps to follow.</p>
+					<ol>
+						<li>Step One</li>
+						<li>Step Two</li>
+						<li>Step Three</li>
+						<li>Step Four</li>
+					</ol>
+
+					<h4 id="step2-2-2">Unordered Lists</h4>
+					<p> Otherwise use an unordered list.</p>
+					<ul>
+						<li>Something</li>
+						<li>Something else</li>
+						<li>And another thing</li>
+					</ul>
+
+					<h4 id="step2-2-3">Code Blocks</h4>
+					<p>Use the <em>pre</em> and <em>code</em> tags to display code. By including the "language-processing" class, the syntax will be highlighted automatically.</p>
+					<pre><code class="language-markup">&lt;pre&gt;&lt;code class="language-processing"&gt;
+	// Your code goes here.
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+
+					<h3 id="step2-3">Additional Media</h3>
+
+					<h4 id="step2-3-1">Images</h4>
+					<p>Use the complete semantic figure markup for images and their captions. If you want the image to be responsive, use the "image-container" class on the figure.</p> 					<pre><code class="language-markup">&lt;figure class="image-container"&gt;
+	&lt;img src="img/filename.jpg" alt="Image alt text" /&gt;
+	&lt;figcaption/&gt;Image Caption&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+					<figure class="image-container">
+					    <img src="https://via.placeholder.com/500" alt="This is a figure." />
+					    <figcaption>This is a caption.</figcaption>
+					</figure>
+
+					<h4 id="step2-3-2">Videos</h4>
+					<p>You may even want to include videos. Use the "video-container" class on the figure to get responsive videos.</p>
+					<pre><code class="language-markup">&lt;figure class="video-container"&gt;
+	&lt;iframe&gt;&lt;/iframe&gt;
+	&lt;figcaption/&gt;Video Caption&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+					<figure class="video-container">
+						<iframe src="https://www.youtube.com/embed/hydCdGLAh00" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<figcaption>Here is a video on the concept of 'chunking' I mentioned <a href="#step2-1-1">above.</a></figcaption>
+					</figure>
+
+
+
+					<h4 id="step2-3-3">Code Embeds</h4>
+					<p>You can embed pre-filled editors directly from <a href="https://editor.p5js.org" target="_blank">editor.p5js.org</a>. Replace the src with your own saved sketch URL to give users a starting point.</p>
+					<pre><code class="language-markup">&lt;iframe src="[Your sketch URL]"
+scrolling="no" frameborder="0" height="575"
+allowtransparency="true" allowfullscreen="true"
+name="Sketch1" title="P5.js Sketch"
+style="width: 100%; overflow: hidden;"&gt;&lt;/iframe&gt;
+&lt;label for="Sketch1"/&gt;Optional caption.&lt;/label&gt;
+					</code></pre>
+					<p>It's important to make sure you use all the right attributes in the iFrame, so it renders like this:</p>
+					<iframe src="https://editor.p5js.org/p5/sketches/Hello_P5:_drawing" scrolling="no" frameborder="0" height="575" allowtransparency="true" allowfullscreen="true" name="Embed2" title="P5.js Drawing" style="width: 100%; overflow: hidden;"></iframe>
+					<label for="Embed2">Click play to run and try drawing in the preview window.</label>
+				</section>
+
+				<section class="content-container">
+					<h2 id="step3">Step 3 - Evaluation</h2>
+					<p>Throughout your tutorial, you should be providing interactive examples to help the user understand the concept you are teaching them. This should culminate in an exercise that applies everything the user just learnt.</p>
+
+					<h3 id="step3-1">Task based</h3>
+					<p>It might be suitable for your topic to give your user a task to achieve, with potentially multiple objectives. For example:</p>
+					<p><strong>Create some virtual artwork by doing the following:</strong></p>
+					<ol>
+						<li>Create a landscape ratio canvas</li>
+						<li>Fill the canvas with a dark background colour</li>
+						<li>Draw a bright coloured 2D primitive on the canvas</li>
+						<li>Sign your name in the bottom right corner</li>
+					</ol>
+						<iframe src="https://editor.p5js.org" scrolling="no" frameborder="0" height="575" allowtransparency="true" allowfullscreen="true" name="P5.js Embed 3" title="P5.js Embed 3" style="width: 100%; overflow: hidden;"></iframe>
+						<label for="P5.js Embed 3"><em>Replace the code above. See the P5.js <a href="https://p5js.org/reference/#group-Shape">shape</a> and <a href="https://p5js.org/reference/#group-Typography">typography</a> refences for help.</em></label>
+
+						<p>Here is a possible solution for this task:</p>
+
+<pre><code class="language-processing">function setup() {
+  createCanvas(600, 200);
+	background(220);
+	fill(200,150,200);
+	rect(250, 50, 55, 55);
+	textSize(32);
+	text('Rob Picasso', 360, 160);
+}
+// We don't use the draw function at all for this</code></pre>
+
+						<h3 id="step3-2">Exploration based</h3>
+
+						<p>Perhaps your task is more suited to the user experimenting on their own. You can still provide some helpful guidelines, for example:</p>
+
+						<ul>
+							<li>Experiment with other 3D Primitives</li>
+							<em>OR</em>
+							<li>Test importing and using different fonts</li>
+							<em>OR</em>
+							<li>Try linking the audio library and visualise input from the microphone</li>
+
+						</ul>
+
+						<p>Don't forget that you can't just throw people in the deep end. You should build up to this final exploration task with your prior instruction. It also might help to give the user an example they can work off, like this: </p>
+
+						<iframe src="https://editor.p5js.org/p5/sketches/Sound:_Amplitude_Analysis" scrolling="no" frameborder="0" height="675" allowtransparency="true" allowfullscreen="true" name="P5.js Embed 4" title="P5.js Embed 4" style="width: 100%; overflow: hidden;"></iframe>
+						<label for="P5.js Embed 4"><em>The processing web editor allows you to include their <a href="https://p5js.org/libraries/" >libraries</a>.</em></label>
+
+						<h3 id="step3-3">Something Else</h3>
+						<p>Of course there are plenty of other methods of evaluation. Include anything you think of that you can insert or embed in the template. Such as this online JavaScript quiz:</p>
+						<iframe src="http://davidshariff.com/js-quiz/" scrolling="no" frameborder="0" height="675" allowtransparency="true" allowfullscreen="true" name="js Embed 5" title="js Embed 5" style="width: 100%; overflow: hidden;"></iframe>
+						<label for="P5.js Embed 5"><em>Warning: This quiz is an example and is not actually suitable for JavaScript beginners!</em></label>
+
+					</section>
+			</article>
+    </main>
+		 <footer>Footer</footer>
+
+
+		 		<script src="js/prism.js"></script>
+				<script src="js/scrollmenu.js"></script>
+				<script type="text/javascript">
+				      new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
+								duration: 500,
+								activeOffset: 100,
+							})
+				</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required imported CSS files -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css"/>
+ </head>
+
+
+ <body class="container">
+
+		<!-- Make your modifications below -->
+
+
+		<!-- Make your navigation modifications below -->
+		<!-- Replicate the heading structure for a 'table of contents' nav -->
+    <nav>
+       <div class="nav-container">
+          <a href="#title">Table of Contents</a>
+          <ol>
+             <li><a href="#step1">Heading 2</a></li>
+             <ol>
+                <li><a href="#step1-1">Heading 3</a></li>
+                <ol>
+                   <li><a href="#step1-1-1">Heading 4</a></li>
+                </ol>
+             </ol>
+             <li><a href="#step2-1">Elements</a></li>
+             <ol>
+                <li><a href="#step2-1">Text</a></li>
+                <li><a href="#step2-2">Lists</a></li>
+                <li><a href="#step2-3">Questions</a></li>
+             </ol>
+             <li><a href="#step3">Media</a></li>
+             <ol>
+                <li><a href="#step3-1">Images</a></li>
+                <li><a href="#step3-2">Videos</a></li>
+             </ol>
+          </ol>
+       </div>
+    </nav>
+
+    <main>
+       <article>
+
+				 <!-- Make your content modifications below -->
+				 <!-- Section for the top banner heading, this should be your only h1 -->
+          <section class="title-container">
+             <h1 id="title">Heading 1</h1>
+          </section>
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2 id="step1">Heading 2</h2>
+             <h3 id="step1-1">Heading 3</h3>
+             <h4 id="step1-1-1">Heading 4</h4>
+					</section>
+
+					<!-- Body section with HTML formatting elements -->
+					<section class="content-container">
+             <h2 id="step2">Elements</h2>
+
+						 <h3 id="step2-1">Text</h3>
+             <p>Regular text.</p>
+             <p><strong>Strong text.</strong></p>
+             <p><em>Emphasised text.</em></p>
+             <p><a href="#step2-1">Link text.</a></p>
+
+						<h3 id="step2-2">Lists</h3>
+             <ol>
+                <li>Ordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ol>
+             <ul>
+                <li>Unordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ul>
+
+             <h3 id="step2-3">Questions</h3>
+             <select class="filterby">
+             <option><h5>Choose your Answer</h5></option>
+             <option value="1"><h5>A. Kinda Awesome</h5></option>
+             <option value="2"><h5>B. Pretty Awesome</h5></option>
+             <option value="3"><h5>C. Very Awesome</h5></option>
+           </select>
+           <div id="FilterContainer">
+             <div class="1">Incorrect. To call Sam "Kinda Awesome is a travesty beyond compare complete fail"</div>
+             <div class="2">Close. "Pretty awesome" is close to synonymous with Sam but you're missing the gravity of the situation</div>
+             <div class="3">Correct! You have an apt understanding of how awesome Sam is.</div>
+           </div>
+					</section>
+
+					<!-- Body section with HTML media elements -->
+					<section class="content-container">
+             <h2 id="step3">Media</h2>
+
+						 <h3 id="step3-1">Images</h3>
+             <figure class="image-container">
+							 <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/placeholder.png" alt="This is an image." />
+                <figcaption>Image caption.</figcaption>
+             </figure>
+
+						 <h3 id="step3-2">Videos</h3>
+             <figure class="video-container">
+							 	<!-- Replace the src URL, make sure to use the embed URL if linking from from youtube -->
+                <iframe src="https://www.youtube.com/embed/S1o41_oHSAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <figcaption>Video caption.</figcaption>
+             </figure>
+          </section>
+
+
+       </article>
+    </main>
+
+
+    <footer>
+      <p>Suggested Reading 1</p>
+      <p>Suggested Reading 2</p>
+      <p>Suggested Reading 3</p>
+    </footer>
+
+
+    <!-- Required imported js -->
+    <script src="js/prism.js"></script>
+    <script src="js/scrollmenu.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="js/filter.js"></script>
+    <script type="text/javascript">
+       new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
+       duration: 500,
+       activeOffset: 100,
+       })
+    </script>
+
+
+ </body>
+</html>
