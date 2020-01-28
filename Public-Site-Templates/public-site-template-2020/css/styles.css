@@ -144,11 +144,7 @@ figure figcaption {
 }
 
 figure.image-container {
-	max-width: 500px;
-}
-
-figure.image-container {
-	max-width: 500px;
+	max-width: 625px;
 }
 
 figure.image-container figcaption,
@@ -160,7 +156,7 @@ label {
 
 figure img {
 	display: block;
-	width: 125%;
+	width: 100%;
 	margin: inherit auto;
 }
 
