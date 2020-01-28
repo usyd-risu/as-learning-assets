@@ -69,6 +69,7 @@ header {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 
@@ -208,8 +209,6 @@ footer {
   /*grid-gap: 10px;*/
   /*background-color: #2196F3;*/
   padding: 5px;
-	position: absolute;
-	width: 100vw;
 }
 /* NAVBAR GRID ITEMS */
 .navbar-grid-container > div {
@@ -243,10 +242,10 @@ underline {
 /*target rules based on jsfiddle: https://jsfiddle.net/codepo8/wsD9L*/
 
 
-.module {
+.name-module-class {
   display: none;
 }
-.module:target {
+.name-module-class:target {
   display: grid;
 }
 
@@ -387,45 +386,26 @@ em {
 	font-style: italic;
 }
 
-/* modifications */
-.content-container h2 {
-	margin-top: 15vh;
-}
-
-.filterby {
-	width: 100%;
-}
-#FilterContainer {
-	padding: 5vh;
-	text-align: center;
-}
-
-select {
-	font-size: 1.4em;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-td, th {
-  border: 1px solid #999;
-  padding: 0.5rem;
-  text-align: left;
-}
-
-.tick {
-	background-color: #bddc96;
-	color: #bddc96
-}
-
-.table-fig {
-	margin-top: 5vh;
-}
-
-/* MEDIA QUERIES */
 
 @media (min-width: 1200px) {
+	.container {
+		display: grid;
+		/* use the following if you wish to have a navbar on the side as opposed to the default modular display system
+		grid-template-columns: 250px 1fr;
+		 */
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr auto;
+	}
+	.nav-container {
+		position: fixed;
+		width: 210px;
+	}
+	.logo-container {
+		position: fixed;
+    top: 5px;
+		font-size: 2em;
+		font-weight: 900;
+	}
 }
 
 @media (max-width: 760px) {
@@ -442,10 +422,6 @@ td, th {
   .content-container h3 {
     font-size: var(--text-md);
   }
-}
-
-@media (max-width: 500px) {
-
 }
 
 @media (min-width: 761px) and (max-width: 1500px) {

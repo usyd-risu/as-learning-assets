@@ -1,232 +1,326 @@
 <!DOCTYPE html>
 <html>
-
-	<head>
-		<title>DECO1016 Template</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-		<link rel="stylesheet" href="css/reset.css"/>
-		<link rel="stylesheet" href="css/styles.css"/>
-		<link rel="stylesheet" href="css/prism.css"/>
-	</head>
-
-	<body class="container">
-	 <header>
-		 <div class="logo-container"><a href="index.html">CCC</a></div>
-		 <div class="header-container">Creative Coding Challenge </div>
-	  </header>
-	 <nav>
-		 <div class="nav-container">
-			<a href="#title">How to use this template</a>
-		 	<ol>
-				<li><a href="#step1">Step 1 - Introduction</a></li>
-				<li><a href="#step2">Step 2 - Explanation</a></li>
-				<ol>
-					<li><a href="#step2-1">Subheadings</a></li>
-					<ol>
-						<li><a href="#step2-1-1">Sub-subheadings</a></li>
-					</ol>
-					<li><a href="#step2-2">Formatting Elements</a></li>
-					<ol>
-						<li><a href="#step2-2-1">Ordered Lists</a></li>
-						<li><a href="#step2-2-2">Unordered Lists</a></li>
-						<li><a href="#step2-2-3">Code Blocks</a></li>
-					</ol>
-					<li><a href="#step2-3">Additional Media</a></li>
-					<ol>
-						<li><a href="#step2-3-1">Images</a></li>
-						<li><a href="#step2-3-2">Videos</a></li>
-						<li><a href="#step2-3-3">Code Embeds</a></li>
-					</ol>
-				</ol>
-				<li><a href="#step3">Step 3 - Evaluation</a></li>
-				<ol>
-					<li><a href="#step3-1">Task Based</a></li>
-					<li><a href="#step3-2">Exploration Based</a></li>
-					<li><a href="#step3-3">Something Else</a></li>
-				</ol>
-			</ol>
-		</div>
-	</nav>
-
-    <main>
-			<article>
-	      <section class="title-container">
-	        <h1 id="title">How to use this template</h1>
-	      </section>
+ <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required imported CSS files -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css"/>
+ </head>
 
 
+ <body class="container">
 
-				<section class="content-container">
-					<p>General description about the tutorial including links to any assumed knowledge.</p>
-
-					<h2 id="step1">Step 1 - Introduction </h2>
-
-					<p>Introduce your topic with some information and a basic example.</p>
-
-<pre><code class="language-processing">function setup() {
-  createCanvas(400, 400);
-}
-
-// Remember to include comments to describe your code.
-
-function draw() {
-  background(220);
-}</code></pre>
-
-					<p>Perhaps you want to include some pre-formatted code like above. Or maybe you want to embed a code editor like below.</p>
-
-					<iframe src="https://editor.p5js.org" scrolling="no" frameborder="0" height="575" allowtransparency="true" allowfullscreen="true" name="P5.js Embed" title="P5.js Embed 1" style="width: 100%; overflow: hidden;"></iframe>
-					<label for="P5.js Embed"><em>Click the play button to run the code example.</em></label>
+		<!-- Make your modifications below -->
 
 
-				</section>
+		<!-- Make your navigation modifications below -->
+		<!-- Replicate the heading structure for a 'table of contents' nav -->
+    <div class="navbar-grid-container">
+      <div class="n-item1"><a href='#content1'>What is a literature review</a></div>
+      <div class="n-item2"><a href='#content2'>What is meant by the term literature</a></div>
+      <div class="n-item3"><a href='#content3'>What is meant by the term review</a></div>
+      <div class="n-item4"><a href='#content4'>Characteristics of a literature review</a></div>
+      <underline class="n-item5"></underline>
+    </div>
 
-				<section class="content-container">
-					<h2 id="step2">Step 2 - Explanation</h2>
+    <main class="module" id="content1">
+       <article>
 
-					<p>Provide more information about your topic, with useful demonstrations.</p>
+				 <!-- Make your content modifications below -->
+				 <!-- Section for the top banner heading, this should be your only h1 -->
+          <section class="title-container">
+             <h1 id="title">What is a literature review?</h1>
+          </section>
 
-					<h3 id="step2-1">Subheadings</h3>
-					<p>Use subheadings to chunk your information into smaller components.</p>
-					<h4 id="step2-1-1">Sub-subheadings</h4>
-					<p>Futher group and categorise your topics. Try not to go lower than this level of subheading, any further and the user might start to forget where they are in the heirarchy.</p>
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2 id="step1">Heading 2</h2>
+             <h3 id="step1-1">Heading 3</h3>
+             <h4 id="step1-1-1">Heading 4</h4>
+					</section>
 
-					<h3 id="step2-2">Formatting Elements</h3>
-					<p>Don't forget to use HTML elements to format your content. Elements such as: </p>
+					<!-- Body section with HTML formatting elements -->
+					<section class="content-container">
+             <h2 id="step2">Elements</h2>
 
-					<h4 id="step2-2-1">Ordered Lists</h4>
-					<p> Use an ordered list when there are a linear set of steps to follow.</p>
-					<ol>
-						<li>Step One</li>
-						<li>Step Two</li>
-						<li>Step Three</li>
-						<li>Step Four</li>
-					</ol>
+						 <h3 id="step2-1">Text</h3>
+             <p>Regular text.</p>
+             <p><strong>Strong text.</strong></p>
+             <p><em>Emphasised text.</em></p>
+             <p><a href="#step2-1">Link text.</a></p>
 
-					<h4 id="step2-2-2">Unordered Lists</h4>
-					<p> Otherwise use an unordered list.</p>
-					<ul>
-						<li>Something</li>
-						<li>Something else</li>
-						<li>And another thing</li>
-					</ul>
+						<h3 id="step2-2">Lists</h3>
+             <ol>
+                <li>Ordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ol>
+             <ul>
+                <li>Unordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ul>
 
-					<h4 id="step2-2-3">Code Blocks</h4>
-					<p>Use the <em>pre</em> and <em>code</em> tags to display code. By including the "language-processing" class, the syntax will be highlighted automatically.</p>
-					<pre><code class="language-markup">&lt;pre&gt;&lt;code class="language-processing"&gt;
-	// Your code goes here.
-&lt;/code&gt;&lt;/pre&gt;</code></pre>
+             <h3 id="step2-3">Questions</h3>
+             <select class="filterby">
+             <option><h5>Choose your Answer</h5></option>
+             <option value="1"><h5>A. Kinda Awesome</h5></option>
+             <option value="2"><h5>B. Pretty Awesome</h5></option>
+             <option value="3"><h5>C. Very Awesome</h5></option>
+           </select>
+           <div id="FilterContainer">
+             <div class="1">Incorrect. To call Sam "Kinda Awesome is a travesty beyond compare complete fail"</div>
+             <div class="2">Close. "Pretty awesome" is close to synonymous with Sam but you're missing the gravity of the situation</div>
+             <div class="3">Correct! You have an apt understanding of how awesome Sam is.</div>
+           </div>
+					</section>
+
+					<!-- Body section with HTML media elements -->
+					<section class="content-container">
+             <h2 id="step3">Media</h2>
+
+						 <h3 id="step3-1">Images</h3>
+             <figure class="image-container">
+							 <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/placeholder.png" alt="This is an image." />
+                <figcaption>Image caption.</figcaption>
+             </figure>
+
+						 <h3 id="step3-2">Videos</h3>
+             <figure class="video-container">
+							 	<!-- Replace the src URL, make sure to use the embed URL if linking from from youtube -->
+                <iframe src="https://www.youtube.com/embed/S1o41_oHSAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <figcaption>Video caption.</figcaption>
+             </figure>
+          </section>
 
 
-					<h3 id="step2-3">Additional Media</h3>
+       </article>
+    </main>
+    <main class="module" id="content2">
+       <article>
 
-					<h4 id="step2-3-1">Images</h4>
-					<p>Use the complete semantic figure markup for images and their captions. If you want the image to be responsive, use the "image-container" class on the figure.</p> 					<pre><code class="language-markup">&lt;figure class="image-container"&gt;
-	&lt;img src="img/filename.jpg" alt="Image alt text" /&gt;
-	&lt;figcaption/&gt;Image Caption&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-					<figure class="image-container">
-					    <img src="https://via.placeholder.com/500" alt="This is a figure." />
-					    <figcaption>This is a caption.</figcaption>
-					</figure>
+				 <!-- Make your content modifications below -->
+				 <!-- Section for the top banner heading, this should be your only h1 -->
+          <section class="title-container">
+             <h1 id="title">What is meant by the term literature</h1>
+          </section>
 
-					<h4 id="step2-3-2">Videos</h4>
-					<p>You may even want to include videos. Use the "video-container" class on the figure to get responsive videos.</p>
-					<pre><code class="language-markup">&lt;figure class="video-container"&gt;
-	&lt;iframe&gt;&lt;/iframe&gt;
-	&lt;figcaption/&gt;Video Caption&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-					<figure class="video-container">
-						<iframe src="https://www.youtube.com/embed/hydCdGLAh00" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						<figcaption>Here is a video on the concept of 'chunking' I mentioned <a href="#step2-1-1">above.</a></figcaption>
-					</figure>
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2 id="step1">Heading 2</h2>
+             <h3 id="step1-1">Heading 3</h3>
+             <h4 id="step1-1-1">Heading 4</h4>
+					</section>
 
+					<!-- Body section with HTML formatting elements -->
+					<section class="content-container">
+             <h2 id="step2">Elements</h2>
 
+						 <h3 id="step2-1">Text</h3>
+             <p>Regular text.</p>
+             <p><strong>Strong text.</strong></p>
+             <p><em>Emphasised text.</em></p>
+             <p><a href="#step2-1">Link text.</a></p>
 
-					<h4 id="step2-3-3">Code Embeds</h4>
-					<p>You can embed pre-filled editors directly from <a href="https://editor.p5js.org" target="_blank">editor.p5js.org</a>. Replace the src with your own saved sketch URL to give users a starting point.</p>
-					<pre><code class="language-markup">&lt;iframe src="[Your sketch URL]"
-scrolling="no" frameborder="0" height="575"
-allowtransparency="true" allowfullscreen="true"
-name="Sketch1" title="P5.js Sketch"
-style="width: 100%; overflow: hidden;"&gt;&lt;/iframe&gt;
-&lt;label for="Sketch1"/&gt;Optional caption.&lt;/label&gt;
-					</code></pre>
-					<p>It's important to make sure you use all the right attributes in the iFrame, so it renders like this:</p>
-					<iframe src="https://editor.p5js.org/p5/sketches/Hello_P5:_drawing" scrolling="no" frameborder="0" height="575" allowtransparency="true" allowfullscreen="true" name="Embed2" title="P5.js Drawing" style="width: 100%; overflow: hidden;"></iframe>
-					<label for="Embed2">Click play to run and try drawing in the preview window.</label>
-				</section>
+						<h3 id="step2-2">Lists</h3>
+             <ol>
+                <li>Ordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ol>
+             <ul>
+                <li>Unordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ul>
 
-				<section class="content-container">
-					<h2 id="step3">Step 3 - Evaluation</h2>
-					<p>Throughout your tutorial, you should be providing interactive examples to help the user understand the concept you are teaching them. This should culminate in an exercise that applies everything the user just learnt.</p>
-
-					<h3 id="step3-1">Task based</h3>
-					<p>It might be suitable for your topic to give your user a task to achieve, with potentially multiple objectives. For example:</p>
-					<p><strong>Create some virtual artwork by doing the following:</strong></p>
-					<ol>
-						<li>Create a landscape ratio canvas</li>
-						<li>Fill the canvas with a dark background colour</li>
-						<li>Draw a bright coloured 2D primitive on the canvas</li>
-						<li>Sign your name in the bottom right corner</li>
-					</ol>
-						<iframe src="https://editor.p5js.org" scrolling="no" frameborder="0" height="575" allowtransparency="true" allowfullscreen="true" name="P5.js Embed 3" title="P5.js Embed 3" style="width: 100%; overflow: hidden;"></iframe>
-						<label for="P5.js Embed 3"><em>Replace the code above. See the P5.js <a href="https://p5js.org/reference/#group-Shape">shape</a> and <a href="https://p5js.org/reference/#group-Typography">typography</a> refences for help.</em></label>
-
-						<p>Here is a possible solution for this task:</p>
-
-<pre><code class="language-processing">function setup() {
-  createCanvas(600, 200);
-	background(220);
-	fill(200,150,200);
-	rect(250, 50, 55, 55);
-	textSize(32);
-	text('Rob Picasso', 360, 160);
-}
-// We don't use the draw function at all for this</code></pre>
-
-						<h3 id="step3-2">Exploration based</h3>
-
-						<p>Perhaps your task is more suited to the user experimenting on their own. You can still provide some helpful guidelines, for example:</p>
-
-						<ul>
-							<li>Experiment with other 3D Primitives</li>
-							<em>OR</em>
-							<li>Test importing and using different fonts</li>
-							<em>OR</em>
-							<li>Try linking the audio library and visualise input from the microphone</li>
-
-						</ul>
-
-						<p>Don't forget that you can't just throw people in the deep end. You should build up to this final exploration task with your prior instruction. It also might help to give the user an example they can work off, like this: </p>
-
-						<iframe src="https://editor.p5js.org/p5/sketches/Sound:_Amplitude_Analysis" scrolling="no" frameborder="0" height="675" allowtransparency="true" allowfullscreen="true" name="P5.js Embed 4" title="P5.js Embed 4" style="width: 100%; overflow: hidden;"></iframe>
-						<label for="P5.js Embed 4"><em>The processing web editor allows you to include their <a href="https://p5js.org/libraries/" >libraries</a>.</em></label>
-
-						<h3 id="step3-3">Something Else</h3>
-						<p>Of course there are plenty of other methods of evaluation. Include anything you think of that you can insert or embed in the template. Such as this online JavaScript quiz:</p>
-						<iframe src="http://davidshariff.com/js-quiz/" scrolling="no" frameborder="0" height="675" allowtransparency="true" allowfullscreen="true" name="js Embed 5" title="js Embed 5" style="width: 100%; overflow: hidden;"></iframe>
-						<label for="P5.js Embed 5"><em>Warning: This quiz is an example and is not actually suitable for JavaScript beginners!</em></label>
 
 					</section>
-			</article>
+
+					<!-- Body section with HTML media elements -->
+					<section class="content-container">
+             <h2 id="step3">Media</h2>
+
+						 <h3 id="step3-1">Images</h3>
+             <figure class="image-container">
+							 <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/placeholder.png" alt="This is an image." />
+                <figcaption>Image caption.</figcaption>
+             </figure>
+
+						 <h3 id="step3-2">Videos</h3>
+             <figure class="video-container">
+							 	<!-- Replace the src URL, make sure to use the embed URL if linking from from youtube -->
+                <iframe src="https://www.youtube.com/embed/S1o41_oHSAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <figcaption>Video caption.</figcaption>
+             </figure>
+          </section>
+
+
+       </article>
     </main>
-		 <footer>Footer</footer>
+    <main class="module" id="content3">
+       <article>
+
+				 <!-- Make your content modifications below -->
+				 <!-- Section for the top banner heading, this should be your only h1 -->
+          <section class="title-container">
+             <h1 id="title">What is meant by the term review</h1>
+          </section>
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2 id="step1">Heading 2</h2>
+             <h3 id="step1-1">Heading 3</h3>
+             <h4 id="step1-1-1">Heading 4</h4>
+					</section>
+
+					<!-- Body section with HTML formatting elements -->
+					<section class="content-container">
+             <h2 id="step2">Elements</h2>
+
+						 <h3 id="step2-1">Text</h3>
+             <p>Regular text.</p>
+             <p><strong>Strong text.</strong></p>
+             <p><em>Emphasised text.</em></p>
+             <p><a href="#step2-1">Link text.</a></p>
+
+						<h3 id="step2-2">Lists</h3>
+             <ol>
+                <li>Ordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ol>
+             <ul>
+                <li>Unordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ul>
 
 
-		 		<script src="js/prism.js"></script>
-				<script src="js/scrollmenu.js"></script>
-				<script type="text/javascript">
-				      new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
-								duration: 500,
-								activeOffset: 100,
-							})
-				</script>
+					</section>
 
-	</body>
+					<!-- Body section with HTML media elements -->
+					<section class="content-container">
+             <h2 id="step3">Media</h2>
 
+						 <h3 id="step3-1">Images</h3>
+             <figure class="image-container">
+							 <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/placeholder.png" alt="This is an image." />
+                <figcaption>Image caption.</figcaption>
+             </figure>
+
+						 <h3 id="step3-2">Videos</h3>
+             <figure class="video-container">
+							 	<!-- Replace the src URL, make sure to use the embed URL if linking from from youtube -->
+                <iframe src="https://www.youtube.com/embed/S1o41_oHSAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <figcaption>Video caption.</figcaption>
+             </figure>
+          </section>
+
+
+       </article>
+    </main>
+    <main class="module" id="content4">
+       <article>
+
+				 <!-- Make your content modifications below -->
+				 <!-- Section for the top banner heading, this should be your only h1 -->
+          <section class="title-container">
+             <h1 id="title">Characteristics of a literature review</h1>
+          </section>
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2 id="step1">Heading 2</h2>
+             <h3 id="step1-1">Heading 3</h3>
+             <h4 id="step1-1-1">Heading 4</h4>
+					</section>
+
+					<!-- Body section with HTML formatting elements -->
+					<section class="content-container">
+             <h2 id="step2">Elements</h2>
+
+						 <h3 id="step2-1">Text</h3>
+             <p>Regular text.</p>
+             <p><strong>Strong text.</strong></p>
+             <p><em>Emphasised text.</em></p>
+             <p><a href="#step2-1">Link text.</a></p>
+
+						<h3 id="step2-2">Lists</h3>
+             <ol>
+                <li>Ordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ol>
+             <ul>
+                <li>Unordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ul>
+					</section>
+
+					<!-- Body section with HTML media elements -->
+					<section class="content-container">
+             <h2 id="step3">Media</h2>
+
+						 <h3 id="step3-1">Images</h3>
+             <figure class="image-container">
+							 <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/placeholder.png" alt="This is an image." />
+                <figcaption>Image caption.</figcaption>
+             </figure>
+
+						 <h3 id="step3-2">Videos</h3>
+             <figure class="video-container">
+							 	<!-- Replace the src URL, make sure to use the embed URL if linking from from youtube -->
+                <iframe src="https://www.youtube.com/embed/S1o41_oHSAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <figcaption>Video caption.</figcaption>
+             </figure>
+          </section>
+
+
+       </article>
+    </main>
+
+
+    <footer>
+      <p>Suggested Reading 1</p>
+      <p>Suggested Reading 2</p>
+      <p>Suggested Reading 3</p>
+    </footer>
+
+
+    <!-- Required imported js -->
+    <script src="js/prism.js"></script>
+    <script src="js/scrollmenu.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="js/filter.js"></script>
+    <script type="text/javascript">
+       new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
+       duration: 500,
+       activeOffset: 100,
+       })
+    </script>
+
+
+ </body>
 </html>
