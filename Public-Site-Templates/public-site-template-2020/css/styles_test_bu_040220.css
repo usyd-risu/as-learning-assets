@@ -1,6 +1,9 @@
 /* GRID TEMPLATE ITEMS */
 /* NAVBAR ITEMS */
-.navbar-grid-items {grid-area: ngi}
+.n-item1 { grid-area: one; }
+.n-item2 { grid-area: two; }
+.n-item3 { grid-area: three; }
+.n-item4 { grid-area: four; }
 .uline {grid-area: uline; }
 
 /* STYLES FROM TEMPLATE */
@@ -196,8 +199,8 @@ footer {
 .navbar-grid-container {
   display: grid;
   grid-template-areas:
-	'ngi'
-	'uline';
+    'one two three four'
+    'uline uline uline uline';
   /*grid-gap: 10px;*/
   /*background-color: #2196F3;*/
   padding: 5px;
@@ -205,21 +208,20 @@ footer {
 	width: 100vw;
 }
 /* NAVBAR GRID ITEMS */
-.navbar-grid-items > div {
+.navbar-grid-container > div {
   /*background-color: rgb(211,	234,	252);*/
-	display: inline-block;
   text-align: left;
-  padding: 3vh 5vw 0;
+  padding: 20px 5px 0;
   font-size: 14px;
 }
 
-.navbar-grid-items > div > a {
+.navbar-grid-container > div > a {
   text-decoration: none;
   color: rgba(100, 100, 100, 1)
 }
 /* first letter of nav item */
 
-.navbar-grid-items > div > a:hover {
+.navbar-grid-container > div > a:hover {
     border-bottom: 2px solid;
     border-bottom-color: rgba(239, 134, 113, 1);
 }
