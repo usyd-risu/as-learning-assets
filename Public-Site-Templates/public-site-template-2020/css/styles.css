@@ -436,9 +436,10 @@ td, th {
   .content-container h3 {
     font-size: var(--text-md);
   }
+
 }
 
-@media (max-width: 400px) {
+@media (max-width: 630px) {
 	.content-container h2 {
 		margin-top: 5em;
 	}
