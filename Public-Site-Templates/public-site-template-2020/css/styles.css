@@ -438,8 +438,10 @@ td, th {
   }
 }
 
-@media (max-width: 500px) {
-
+@media (max-width: 400px) {
+	.content-container h2 {
+		margin-top: 5em;
+	}
 }
 
 @media (min-width: 761px) and (max-width: 1500px) {
