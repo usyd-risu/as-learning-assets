@@ -439,7 +439,7 @@ td, th {
 
 }
 
-@media (max-width: 630px) {
+@media (max-width: 740px) {
 	.content-container h2 {
 		margin-top: 5em;
 	}
