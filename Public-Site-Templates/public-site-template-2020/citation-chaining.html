@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required imported CSS files -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css"/>
+ </head>
+
+
+ <body class="container">
+
+		<!-- Make your modifications below -->
+
+
+		<!-- Make your navigation modifications below -->
+		<!-- Replicate the heading structure for a 'table of contents' nav -->
+    <div class="navbar-grid-container">
+      <div class="navbar-grid-items">
+        <div><a href='#content1'>Infographic</a></div>
+        <div><a href='#content2'>Text Version</a></div>
+      </div>
+      <underline class="uline"></underline>
+    </div>
+
+    <main class="module" id="content1">
+       <article>
+
+				 <!-- Make your content modifications below -->
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2>Citation Chaining Infographic</h2>
+             <figure class="image-container">
+               <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/citation-chaining-infographic.png"
+                alt="An infographic explaining citation chaining" />
+
+                <figcaption>Here is an inforgraphic explaining Citation Chaining.</a></figcaption>
+             </figure>
+          </section>
+       </article>
+    </main>
+    <main class="module" id="content2">
+       <article>
+
+				 <!-- Make your content modifications below -->
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2>Citation Chaining (Text Version)</h2>
+             <h3>So you've found an article...</h3>
+             <p>When you have found a useful information source, like a book or journal article, you can use this source to find other relevant sources for your research.<br><br>
+
+One option is to browse the references listed in your original source (known as ‘Cited References’) to identify related information sources that were published before your source.<br><br>
+
+Another option is to search for other information sources that have cited your original information source and were published after your original source. We call these ‘Citing References’.</p>
+          </section>
+       </article>
+    </main>
+
+
+    <!-- Required imported js -->
+    <script src="js/prism.js"></script>
+    <script src="js/scrollmenu.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="js/filter.js"></script>
+    <script type="text/javascript">
+       new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
+       duration: 500,
+       activeOffset: 100,
+       })
+    </script>
+ </body>
+</html>
