@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required imported CSS files -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css"/>
+ </head>
+
+
+ <body class="container">
+
+		<!-- Make your modifications below -->
+
+
+		<!-- Make your navigation modifications below -->
+		<!-- Replicate the heading structure for a 'table of contents' nav -->
+    <div class="navbar-grid-container">
+      <div class="navbar-grid-items">
+        <div><a href='#content1'>Infographic</a></div>
+        <div><a href='#content2'>Text Version</a></div>
+      </div>
+      <underline class="uline"></underline>
+    </div>
+
+    <main class="module" id="content1">
+       <article>
+
+				 <!-- Make your content modifications below -->
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2>Find that book Infographic</h2>
+             <figure class="image-container">
+               <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/find-that-book.png"
+                alt="An infographic explaining Call Numbers" />
+
+                <figcaption>Here is an infographic explaining Call Numbers</a></figcaption>
+             </figure>
+          </section>
+       </article>
+    </main>
+    <main class="module" id="content2">
+       <article>
+
+				 <!-- Make your content modifications below -->
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2>Find that book (Text Version)</h2>
+             <h3>How do call numbers work?</h3>
+             <p>The first part of the call number that appears before the decimal point and is treated as a whole number. This number represents a general topic area. Find this number on the library shelf first.<br><br>
+
+The second part of the call number that appears after the decimal point and represents the subtopic. Each digit in this number is read separately. Find the first number, then move onto the second number, and so on.<br><br>
+
+A space appears next to separate the next number.<br><br>
+
+The next number (called the Shelf list) tells you where the item is shelved within 523.105. In this example, this book is the 12th item in this section.<br><br>
+
+If you see a letter after the shelf list number. This tells you the edition of the item and is sorted alphabetically. So, “A” comes first.</p>
+          </section>
+       </article>
+    </main>
+
+
+    <!-- Required imported js -->
+    <script src="js/prism.js"></script>
+    <script src="js/scrollmenu.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="js/filter.js"></script>
+    <script type="text/javascript">
+       new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
+       duration: 500,
+       activeOffset: 100,
+       })
+    </script>
+ </body>
+</html>
