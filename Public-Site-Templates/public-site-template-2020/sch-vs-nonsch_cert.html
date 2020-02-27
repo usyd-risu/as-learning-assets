@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required imported CSS files -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css"/>
+ </head>
+
+
+ <body class="container">
+
+		<!-- Make your modifications below -->
+
+
+		<!-- Make your navigation modifications below -->
+		<!-- Replicate the heading structure for a 'table of contents' nav -->
+    <div class="navbar-grid-container">
+      <div class="navbar-grid-items">
+        <div><a href='#content1'>Overview</a></div>
+        <div><a href='#content2'>Text Version</a></div>
+        <div><a href='#content3'>Test your knowledge</a></div>
+      </div>
+      <underline class="uline"></underline>
+    </div>
+
+    <main class="module" id="content1">
+       <article>
+
+				 <!-- Make your content modifications below -->
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2>Scholarly vs Non Scholarly</h2>
+             <figure class="image-container">
+               <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/sch-vs-non-sch/sch-vs-non-sch-infographic.png"
+                alt="An infographic explaining the difference between scholarly and non-scholarly sources" />
+
+                <!--<figcaption>Here is an infographic explaining Citation Searching.</a></figcaption>-->
+             </figure>
+          </section>
+       </article>
+    </main>
+    <main class="module" id="content2">
+       <article>
+
+				 <!-- Make your content modifications below -->
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2>Citation Searching</h2>
+             <h3>Scholarly Sources</h3>
+             <p><strong>Producer</strong><br>
+               Scholarly when the Author is an expert. Non Scholarly when the author is not an expert i.e. not affiliated with or recognised within academic circles.<br><br>
+
+               <strong>Purpose</strong><br>
+                 Scholarly when the aim is to add knowledge to a field. Non Scholarly when the aim is to convince, inform or entertain.<br><br>
+
+                 <strong>Process</strong><br>
+                   Scholarly when the claims and methods have been checked by academic experts (peer review). Non Scholarly when check by non-academic experts or not at all.<br><br>
+
+                   <strong>Product</strong><br>
+                     Scholarly when claims are supported with the latest developments available in academic sources. Non Scholarly when claims are not supported by academic sources.</p>
+          </section>
+       </article>
+    </main>
+    <main class="module" id="content3">
+      <article>
+      <section class="content-container">
+        <!-- Make your content modifications below -->
+
+
+
+        <h2>Test your knowledge</h2>
+        <p>Below is a question for you. read this <a href="img/sch-vs-non-sch/sch-vs-non-sch-iresearch.pdf" target="_blank">PDF</a> to help you answer the below.</p>
+        <figure class="image-container">
+          <!-- Link your own images from the img folder or somewhere online -->
+           <img src="img/sch-vs-non-sch/sch-vs-non-sch-q.png"
+           alt="Marcel E. Visser “Keeping up with a warming world; assessing the rate of adaptation to climate change” Philosophical Transactions of the Royal Society Series B: Biological Sciences Volume 275, Number 1635 / March 22, 2008 Special Issue ‘Evolutionary dynamics of wild populations’ compiled and edited by Loeske  E. B. Kruuk and William G. Hill" />
+
+           <figcaption>Is this a scholarly or non-scholarly article?</figcaption>
+        </figure>
+        <figure class="image-container">
+        <select class="filterby">
+        <option><h5>Choose your Answer</h5></option>
+        <option value="1"><h5>Scholarly</h5></option>
+        <option value="2"><h5>Non-Scholarly</h5></option>
+      </select>
+      <div id="FilterContainer">
+        <div class="1"><p>Correct! Peer reviewed journal articles are the most scholarly material available. Collect your certificate <a href="img/sch-vs-non-sch/sch-vs-non-sch-cert.pdf" target="_blank">here</a>. Congratulations.</p></div>
+        <div class="2">
+          <p>Not Quite. Peer reviewed journal articles are scholarly material. Remember to consider the REVIEW method.</p>
+        </div>
+      </div>
+       </figure>
+      </article>
+    </section>
+    </main>
+
+    <!-- Required imported js -->
+    <script src="js/prism.js"></script>
+    <script src="js/scrollmenu.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="js/filter.js"></script>
+    <script type="text/javascript">
+       new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
+       duration: 500,
+       activeOffset: 100,
+       })
+    </script>
+ </body>
+</html>
