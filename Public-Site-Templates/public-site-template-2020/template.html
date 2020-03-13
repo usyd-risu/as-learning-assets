@@ -1,0 +1,169 @@
+<html>
+ <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required imported CSS files -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css"/>
+ </head>
+
+
+ <body class="container">
+
+		<!-- Make your modifications below -->
+
+
+		<!-- Make your navigation modifications below -->
+		<!-- Replicate the heading structure for a 'table of contents' nav -->
+    <div class="navbar-grid-container">
+      <div class="navbar-grid-items">
+        <div><a href='#content1'>Template-Section1</a></div>
+        <div><a href='#content2'>Template-Section2</a></div>
+        <div><a href='#content3'>Template-Section3</a></div>
+        <div><a href='#content4'>Template-Section4</a></div>
+      </div>
+      <underline class="n-item5"></underline>
+    </div>
+
+    <main class="module" id="content1">
+       <article>
+
+				 <!-- Make your content modifications below -->
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2 id="step1">Template-Section1</h2>
+             <p>Here is a paragraph. this is an example of what a block of text. for references on html elements check out <a href="https://www.w3schools.com" target="_blank">w3schools</a>
+             </p>
+            <h3>SubHeading</h3>
+            <p>A bit more text<br><br>
+               with a space in the middle followed by a <a href="https://library.sydney.edu.au/" target="_blank">link</a> and a bit more text.
+             </p>
+             <h4>Sub-SubHeading with an image below</h4>
+             <figure class="image-container">
+  						 <!-- Link your own images from the img folder or somewhere online -->
+               <img src="https://via.placeholder.com/500x350"
+               alt="placeholder" />
+             </figure>
+          </section>
+       </article>
+    </main>
+    <main class="module" id="content2">
+      <article>
+        <section class="content-container">
+           <h2 id="step1">Template-Section2</h2>
+           <p>Some more text</p>
+           <figure class="image-container">
+             <figcaption>This is a figure caption for an image below</figcaption>
+             <!-- Link your own images from the img folder or somewhere online -->
+             <img src="https://via.placeholder.com/500x350"
+             alt="placeholder" />
+           </figure>
+           <figure class="image-container">
+             <figcaption>You can make as many as you like</figcaption>
+             <!-- Link your own images from the img folder or somewhere online -->
+             <img src="https://via.placeholder.com/500x350"
+             alt="placeholder" />
+           </figure>
+           <figure class="image-container">
+             <figcaption>and the section will just keep growing until you stop putting elements in</figcaption>
+             <!-- Link your own images from the img folder or somewhere online -->
+             <img src="https://via.placeholder.com/500x350"
+             alt="placeholder" />
+
+          </figure>
+        </section>
+     </article>
+  </main>
+       </article>
+    </main>
+    <main class="module" id="content3">
+      <article>
+      <section class="content-container">
+        <!-- Make your content modifications below -->
+
+
+
+        <h2>Template-Section3</h2>
+        <p>This is a question set up</p>
+        <figure class="image-container">
+          <!-- Link your own images from the img folder or somewhere online -->
+          <img src="https://via.placeholder.com/500x350"
+          alt="placeholder" />
+
+           <figcaption>Put your question in here</figcaption>
+        </figure>
+        <figure class="image-container">
+        <select class="filterby">
+        <option><h5>Choose your Answer</h5></option>
+        <option value="1"><h5>answer1</h5></option>
+        <option value="2"><h5>answer2</h5></option>
+        <option value="3"><h5>answer3</h5></option>
+      </select>
+      <div id="FilterContainer">
+        <div class="1"><p>Correct! Now you can have some feedback for getting the question right.</p></div>
+        <div class="2">
+          <p>Not Quite. pop some feedback in here to guide someone in the right direction.</p>
+          <figure class="image-container">
+            <figcaption>This is an image within a feedback section</figcaption>
+            <!-- Link your own images from the img folder or somewhere online -->
+             <img src="https://via.placeholder.com/500x350"
+             alt="placeholder" />
+          </figure>
+        </div>
+        <div class="3">
+          <p>Not Quite. pop some feedback in here specific to the answer chosen to guide someone in the right direction</p>
+          <figure class="image-container">
+            <figcaption>This is another image within a feedback section</figcaption>
+            <!-- Link your own images from the img folder or somewhere online -->
+             <img src="https://via.placeholder.com/500x350"
+             alt="placeholder" />
+          </figure>
+        </div>
+      </div>
+       </figure>
+      </article>
+    </section>
+    </main>
+    <main class="module" id="content4">
+       <article>
+
+				 <!-- Make your content modifications below -->
+				 <!-- Section for the top banner heading, this should be your only h1 -->
+          <section class="content-container">
+            <h2>Template-Section3</h2>
+
+            <h3>SubHeading</h3>
+            <ul>
+               <li>here's a list item</li>
+               <li>hey wowee another one!</li>
+            </ul>
+            <h3>another subheading who'da thunk it</h3>
+            <ul>
+               <li>lookey here. it's another list item.</li>
+            </ul>
+          </section>
+       </article>
+    </main>
+
+
+    <!-- Required imported js -->
+    <script src="js/prism.js"></script>
+    <script src="js/scrollmenu.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="js/filter.js"></script>
+    <script type="text/javascript">
+       new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
+       duration: 500,
+       activeOffset: 100,
+       })
+    </script>
+ </body>
+</html>
